@@ -4,39 +4,6 @@
 
 Weather App is a Django project that fetches weather details based on the city input provided by the user. It utilizes the OpenWeatherMap API to retrieve weather data.
 
-## Project Structure
-
-The project is structured as follows:
-
-WeatherApp/\
-├── WeatherApp/\
-│ ├── __init__.py\
-│ ├── settings.py\
-│ ├── urls.py\
-│ ├── wsgi.py\
-│ └── asgi.py\
-├── Weather/\
-│ ├── __init__.py\
-│ ├── admin.py\
-│ ├── apps.py\
-│ ├── migrations/\
-│ │ └── **init**.py\
-│ ├── models.py\
-│ ├── tests.py\
-│ ├── urls.py\
-│ └── views.py\
-├── static/\
-│ └── style.css\
-├── templates/\
-│ └── index.html\
-├── .gitignore\
-├── build_files.sh\
-├── .env\
-├── manage.py\
-├── README.md\
-├── requirements.txt\
-└── vercel.json\
-
 ## Setup
 
 ### Prerequisites
@@ -92,9 +59,39 @@ The project is set up for deployment on platforms like Vercel. Follow these step
 2. Ensure that the `vercel.json`, `build_files.sh`, and `requirements.txt` files are set up correctly.
 3. Push your changes to the repository. Vercel will automatically detect and deploy the changes.
 
-## Contributing
+## Project Structure
 
-Contributions are welcome! If you have suggestions or improvements, please fork the repository and create a pull request.
+The project is structured as follows:
+
+WeatherApp/\
+├── WeatherApp/\
+│ ├── __init__.py\
+│ ├── settings.py\
+│ ├── urls.py\
+│ ├── wsgi.py\
+│ └── asgi.py\
+├── Weather/\
+│ ├── __init__.py\
+│ ├── admin.py\
+│ ├── apps.py\
+│ ├── migrations/\
+│ │ └── **init**.py\
+│ ├── models.py\
+│ ├── tests.py\
+│ ├── urls.py\
+│ └── views.py\
+├── static/\
+│ └── style.css\
+├── templates/\
+│ └── index.html\
+├── .gitignore\
+├── build_files.sh\
+├── .env\
+├── manage.py\
+├── README.md\
+├── requirements.txt\
+└── vercel.json\
+
 
 ## License
 
