@@ -34,6 +34,6 @@ def index(request):
                 "humidity": str(json_date["main"]["humidity"]),
             }
         except urllib.error.HTTPError as e:
-            city = f"HTTP Error occured : {e.code} {e.reason}"
+            city = f"City : {e.code} {e.reason}"
 
     return render(request, "index.html", {"city": city, "data": data})
