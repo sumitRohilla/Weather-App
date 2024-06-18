@@ -8,34 +8,34 @@ Weather App is a Django project that fetches weather details based on the city i
 
 The project is structured as follows:
 
-WeatherApp/
-├── WeatherApp/
-│ ├── **init**.py
-│ ├── settings.py
-│ ├── urls.py
-│ ├── wsgi.py
-│ └── asgi.py
-├── Weather/
-│ ├── **init**.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── migrations/
-│ │ └── **init**.py
-│ ├── models.py
-│ ├── tests.py
-│ ├── urls.py
-│ └── views.py
-├── static/
-│ └── style.css
-├── templates/
-│ └── index.html
-├── .gitignore
-├── build_files.sh
-├── .env
-├── manage.py
-├── README.md
-├── requirements.txt
-└── vercel.json
+WeatherApp/\
+├── WeatherApp/\
+│ ├── __init__.py\
+│ ├── settings.py\
+│ ├── urls.py\
+│ ├── wsgi.py\
+│ └── asgi.py\
+├── Weather/\
+│ ├── __init__.py\
+│ ├── admin.py\
+│ ├── apps.py\
+│ ├── migrations/\
+│ │ └── **init**.py\
+│ ├── models.py\
+│ ├── tests.py\
+│ ├── urls.py\
+│ └── views.py\
+├── static/\
+│ └── style.css\
+├── templates/\
+│ └── index.html\
+├── .gitignore\
+├── build_files.sh\
+├── .env\
+├── manage.py\
+├── README.md\
+├── requirements.txt\
+└── vercel.json\
 
 ## Setup
 
