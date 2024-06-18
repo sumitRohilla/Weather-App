@@ -1,8 +1,7 @@
-import urllib.error
+from urllib.error import HTTPError
 from django.shortcuts import render
 from django.conf import settings
-import urllib.request
-import json
+import urllib.request, json
 
 
 # Create your views here.
@@ -18,9 +17,12 @@ def index(request):
 
         api_key = settings.WEATHER_API_KEY
 
+        print(api_key)
+
         try:
 
             url = f"https://api.openweathermap.org/data/2.5/weather?q={city1}&appid={api_key}"
+
             res = urllib.request.urlopen(url).read()
 
             json_date = json.loads(res)
@@ -33,7 +35,7 @@ def index(request):
                 "pressure": str(json_date["main"]["pressure"]),
                 "humidity": str(json_date["main"]["humidity"]),
             }
-        except urllib.error.HTTPError as e:
+        except HTTPError as e:
             city = f"City : {e.code} {e.reason}"
 
     return render(request, "index.html", {"city": city, "data": data})

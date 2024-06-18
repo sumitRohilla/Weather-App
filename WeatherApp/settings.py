@@ -24,12 +24,13 @@ SECRET_KEY = "django-insecure-q&ond5%9lg3ni*0_u&3e=hxkdj3(tyu+ma1ea_dkwr!@d3%@at
 
 # WEATHER API KEY environment setup
 
-# import environ, os
+import environ, os
 
-# env = environ.Env()
-# environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
-# WEATHER_API_KEY = env("WEATHER_API_KEY")
+
+WEATHER_API_KEY = env("WEATHER_API_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
