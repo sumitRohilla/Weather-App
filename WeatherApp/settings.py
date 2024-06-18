@@ -34,7 +34,7 @@ WEATHER_API_KEY = env("WEATHER_API_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "vercel.app"]
+ALLOWED_HOSTS = ["localhost", ".vercel.app", ".now.sh"]
 
 
 # Application definition
