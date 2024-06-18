@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Details</title>
+    <title>Weather App</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +27,7 @@
   <body>
     <nav>
       <div class="nav-container">
-        <h1>Weather Details</h1>
+        <h1>Weather App</h1>
       </div>
     </nav>
     <form class="form-container" action="" method="post">
@@ -38,6 +38,7 @@
           class="form-control"
           name="place"
           placeholder="Search"
+          autocomplete="off"
           required
         />
         <div class="input-group-btn">
@@ -51,12 +52,14 @@
       {% if city %}
       <div class="data">
         <h1>{{city}}</h1>
+        {% if data %}
         <h3>Country Code : {{data.country_code}}</h3>
         <h5>Coordinate : {{data.coordinate}}</h5>
         <h5>Temp : {{data.temp}}</h5>
         <h5>Weather : {{data.weather}}</h5>
         <h5>Pressure : {{data.pressure}}</h5>
         <h5>Humidity : {{data.humidity}}</h5>
+        {% endif %}
       </div>
       {% endif %}
     </div>
